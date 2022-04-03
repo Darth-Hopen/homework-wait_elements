@@ -54,7 +54,7 @@ def test_product_page(browser):
     browser.find_element(By.CSS_SELECTOR, "[name='quantity']")
 
 
-def test_register_page(browser):
+def test_product_page(browser):
     browser.get(url=browser.url + "/index.php?route=account/register")
     wait = WebDriverWait(driver=browser, timeout=2)
     wait.until(EC.title_is("Register Account"))
